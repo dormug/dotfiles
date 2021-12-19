@@ -1,0 +1,7 @@
+[user]
+	name = Jason Jiang
+	email = 89756664+dormug@users.noreply.github.com
+[init]
+	defaultBranch = main
+[pull]
+	ff = only
