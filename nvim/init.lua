@@ -33,6 +33,10 @@ vim.api.nvim_set_keymap("n", "<Leader>n", ":Explore<CR>", {noremap = true})
 -- hide search results
 vim.api.nvim_set_keymap("n", "<Leader>ch", ":noh<CR>", {noremap = true})
 
+-- buffer switching
+vim.api.nvim_set_keymap("n", "<Leader>u", ":bp<CR>", {noremap = true})
+vim.api.nvim_set_keymap("n", "<Leader>i", ":bn<CR>", {noremap = true})
+
 -- indent blankline
 require("indent_blankline").setup {
     indentLine_enabled = 1,
