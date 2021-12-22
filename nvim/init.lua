@@ -132,10 +132,6 @@ vim.cmd [[
 
     let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+'
 
-    let g:NERDCreateDefaultMappings = 0
-    map <leader>cc <plug>NERDCommenterToggle
-    map <leader>/ <plug>NERDCommenterToggle
-
     let $NVIM_TUI_ENABLE_TRUE_COLOR=1
     set termguicolors
     colorscheme one

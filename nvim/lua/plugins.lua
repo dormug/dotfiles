@@ -28,10 +28,9 @@ return require('packer').startup(function(use)
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
     -- blank line
-    use "lukas-reineke/indent-blankline.nvim"
+    use 'lukas-reineke/indent-blankline.nvim'
 
-    -- nerd commenter
-    use 'preservim/nerdcommenter'
+    use 'tpope/vim-commentary'
 
     -- lualine
     use {
