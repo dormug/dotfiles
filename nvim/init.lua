@@ -18,11 +18,12 @@ vim.opt.expandtab = true
 -- highlight current line
 vim.opt.cursorline = true
 
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
 
 vim.opt.scrolloff = 8
 vim.opt.wrap = false
 vim.opt.hidden = true
-
 
 -- remove trailing whitespaces
 vim.api.nvim_set_keymap("n", "<Leader>rw", ":%s/\\s\\+$//e", {noremap = true})
@@ -39,18 +40,7 @@ vim.api.nvim_set_keymap("n", "<Leader>i", ":bn<CR>", {noremap = true})
 
 -- indent blankline
 require("indent_blankline").setup {
-    indentLine_enabled = 1,
     char = "▏",
-    filetype_exclude = {
-         "help",
-         "terminal",
-         "dashboard",
-         "lspinfo",
-         "TelescopePrompt",
-         "TelescopeResults",
-    },
-    buftype_exclude = { "terminal" },
-    show_trailing_blankline_indent = false,
 }
 
 -- telescope
@@ -72,15 +62,6 @@ vim.api.nvim_set_keymap("n", "<Leader>t", ":Telescope find_files<CR>", {noremap 
 require'nvim-treesitter.configs'.setup {
     highlight = {
         enable = true,
-        custom_captures = {
-        -- Highlight the @foo.bar capture group with the "Identifier" highlight group.
-        ["foo.bar"] = "Identifier",
-    },
-        -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-        -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-        -- Using this option may slow down your editor, and you may see some duplicate highlights.
-        -- Instead of true it can also be a list of languages
-        additional_vim_regex_highlighting = false,
     },
 }
 

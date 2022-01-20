@@ -16,6 +16,9 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+    -- blank line
+    use 'lukas-reineke/indent-blankline.nvim'
+
     use 'ggandor/lightspeed.nvim'
 
     use 'jiangmiao/auto-pairs'
@@ -26,9 +29,6 @@ return require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-
-    -- blank line
-    use 'lukas-reineke/indent-blankline.nvim'
 
     use 'tpope/vim-commentary'
 
