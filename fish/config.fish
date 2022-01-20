@@ -8,7 +8,7 @@ alias icat="kitty +kitten icat"
 set fish_greeting
 
 function fish_title
-    echo $_
+    echo $0
 end
 
 starship init fish | source
