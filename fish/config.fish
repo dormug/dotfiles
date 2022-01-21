@@ -4,6 +4,7 @@ end
 
 alias vim="nvim"
 alias icat="kitty +kitten icat"
+alias kdiff="kitty +kitten diff"
 
 set fish_greeting
 
