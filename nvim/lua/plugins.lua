@@ -19,8 +19,6 @@ return require('packer').startup(function(use)
     -- blank line
     use 'lukas-reineke/indent-blankline.nvim'
 
-    use 'ggandor/lightspeed.nvim'
-
     use 'jiangmiao/auto-pairs'
 
     -- telescope
@@ -30,6 +28,7 @@ return require('packer').startup(function(use)
     }
     use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
+    -- auto commenter
     use 'tpope/vim-commentary'
 
     -- lualine
@@ -37,7 +36,6 @@ return require('packer').startup(function(use)
         'hoob3rt/lualine.nvim',
         requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
-
 
     if packer_bootstrap then
         require('packer').sync()
